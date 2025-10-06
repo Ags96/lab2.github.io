@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: rgb(25, 198, 62);
+    height: 3em;
+    
+}
+
+.item_list{
+    cursor: pointer;
+    padding-left: 2.5em;
+}
+
+.item_list:hover{
+    color: blue;
+}
+
+.acerca_de{
+    text-decoration: none;
+    color: inherit;
+}
+
+.index_main{
+   text-align: center;
+   margin-top: 2em;
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+.parrafo_ejemplo{
+    padding: 0.5em 6em 0 6em;
+}
+
+/*//////////       estilos del archivo acercaDe.html         //////////////*/
+*{
+    box-sizing: border-box;
+
+}
+.acercaDe_main{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.back_button{
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+}
+
+.back_button:hover{
+    color: blue;
+}
+
+.bio{
+    max-width: 10em;
+    font-size: 1.7em;
+}
+
+.imagen_ejemplo{
+    max-width: 15em;
+    margin-left: 3em;
+}
+
+/*//////////////// footer //////////////////*/
+
+footer{
+    height: 7em;
+    width: 100%;
+    background-color: rgb(25, 198, 62);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*****************************   CONTACTO.HTML ******************************/
+.contacto__title{
+   margin: 1em 0 1em 4em;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    margin-left: 5em;
+    
+}
+.metodo_contacto{
+    display: flex;
+    gap: 0.70em;
+    align-items: center;
+}
+
+.suscripcion{
+    display: flex;
+    gap: 0.70em;
+    align-items: center;
+}
+
+
+
+    

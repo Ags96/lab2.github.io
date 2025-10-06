@@ -1,0 +1,91 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Contacto</title>
+</head>
+<body>
+   <nav>
+  <ul class="menu">
+    <li class="item_list"><a href="./index.html">Inicio</a></li>
+    <li class="item_list">Item2</li>
+    <li class="item_list"><a href="./contacto.html">Contacto</a></li>
+    <li class="item_list">
+      <a class="acerca_de" href="./acercaDe.html">Acerca de</a>
+    </li>
+  </ul>
+</nav>
+    <section> 
+        <h2 class="contacto__title">Contacto</h2>        
+        <form class="formulario" action="#" method="post">
+            <label for="name">Nombre (requerido):</label>
+            <input type="text" id="name" name="name" maxlength="20" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" maxlength="20">
+
+            <label for="email">Correo electrónico (requerido):</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="number" id="telefono" name="telefono" placeholder="Ingrese su teléfono" >
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="16" max="120">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" >
+
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="provincia" list="provincias">
+                <datalist id="provincias">
+                        <option value="Chubut"></option>
+                        <option value="Santa Cruz"></option>
+                        <option value="Tierra del Fuego"></option>
+                        <option value="Neuquén"></option>
+                        <option value="Río Negro"></option>
+                        <option value="La Pampa"></option>
+                </datalist>
+
+            <label for="cp">Codigo postal:</label>
+            <input type="text" id="cp" name="cp" pattern="^[A-Z]\d{4}[A-Z]{3}$">
+
+            <label class="metodo_contacto" for="metodo">
+                <p>Elija un metodo de contacto:</p>
+                <div class="metodo_contacto">
+                        <input type="radio" name="metodo_contacto" value="email" checked>
+                                Correo electronico
+                        <input type="radio" name="metodo_contacto" value="cp">
+                                Correo postal
+                        <input type="radio" name="metodo_contacto" value="telefono">
+                                Telefono
+                </div>
+            </label>
+
+             <label for="metodo">
+                <p>Tipo de suscripción:</p>
+                <div class="suscripcion">
+                        <input type="checkbox" name="tipo_suscripcion" value="noticias">
+                                noticias
+                        <input type="checkbox" name="tipo_suscripcion" value="promociones">
+                                promociones
+                        <input type="checkbox" name="tipo_suscripcion" value="eventos">
+                                eventos
+                        <input type="checkbox" name="tipo_suscripcion" value="alertas" checked>
+                                alertas
+                </div>
+            </label>
+
+            <button type="submit">Cargar</button>
+        </form>
+        
+       
+    </section>
+    <footer>
+      <p>
+        &copy; 2025 Albar Agustin Wenceslao Seoane Martinez. Monseñor Esandi y
+        Ayacucho - Viedma, Río Negro.
+      </p>
+    </footer>
+</body>
+</html>

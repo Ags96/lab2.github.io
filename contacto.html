@@ -52,31 +52,38 @@
             <label for="cp">Codigo postal:</label>
             <input type="text" id="cp" name="cp" pattern="^[A-Z]\d{4}[A-Z]{3}$">
 
-            <label class="metodo_contacto" for="metodo">
-                <p>Elija un metodo de contacto:</p>
-                <div class="metodo_contacto">
-                        <input type="radio" name="metodo_contacto" value="email" checked>
+            
+            <fieldset class="contacto">
+                <legend>Elija un metodo de contacto:</legend>
+                
+                        <label>
+                          <input type="radio" name="metodo_contacto" value="email" checked>
                                 Correo electronico
-                        <input type="radio" name="metodo_contacto" value="cp">
+                        </label>
+                        <label>
+                          <input type="radio" name="metodo_contacto" value="cp">
                                 Correo postal
-                        <input type="radio" name="metodo_contacto" value="telefono">
+                        </label>
+                        <label>
+                          <input type="radio" name="metodo_contacto" value="telefono">
                                 Telefono
-                </div>
-            </label>
-
-             <label for="metodo">
-                <p>Tipo de suscripción:</p>
-                <div class="suscripcion">
-                        <input type="checkbox" name="tipo_suscripcion" value="noticias">
+                        </label>
+            </fieldset>
+            <fieldset class="suscripcion">
+                <legend>Tipo de suscripción:</legend>
+                        <label><input type="checkbox" name="tipo_suscripcion" value="noticias">
                                 noticias
-                        <input type="checkbox" name="tipo_suscripcion" value="promociones">
+                        </label>
+                        <label><input type="checkbox" name="tipo_suscripcion" value="promociones">
                                 promociones
-                        <input type="checkbox" name="tipo_suscripcion" value="eventos">
+                        </label>
+                        <label><input type="checkbox" name="tipo_suscripcion" value="eventos">
                                 eventos
-                        <input type="checkbox" name="tipo_suscripcion" value="alertas" checked>
+                        </label>
+                        <label><input type="checkbox" name="tipo_suscripcion" value="alertas" checked>
                                 alertas
-                </div>
-            </label>
+                        </label>
+            </fieldset>
 
             <button type="submit">Cargar</button>
         </form>

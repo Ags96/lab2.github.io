@@ -108,23 +108,29 @@ footer{
 .contacto__title{
    margin: 1em 0 1em 4em;
 }
+
 .formulario{
     display: flex;
     flex-direction: column;
     width: 15em;
     margin-left: 5em;
-    
 }
-.metodo_contacto{
+
+.contacto{
     display: flex;
-    gap: 0.70em;
+    padding: 10px;
     align-items: center;
 }
 
 .suscripcion{
     display: flex;
-    gap: 0.70em;
-    align-items: center;
+    padding: 10px;
+}
+
+fieldset label{
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
 }
 
 .tabla_datos{

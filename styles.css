@@ -113,12 +113,31 @@ h2{
 
 .bio{
     max-width: 10em;
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 .imagen_ejemplo{
     max-width: 15em;
     margin-left: 3em;
+}
+
+.subtitulo_section{
+    text-align: center;
+    margin: 5em;
+}
+
+.subtitulo_section h3{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.flecha_arriba{
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+}
+.flecha_arriba:hover{
+    color: #000;
 }
 
 /*//////////////// footer //////////////////*/
